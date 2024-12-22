@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 10px 10px 10px 10px #d3c9c94d;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+}
+
+.login-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px  #d3c9c94d;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: rgb(0,0,0,0.4);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  margin: 14px 0;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background-color: #222;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #ff5722;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 87, 34, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  background-color: #6a4c9c;  
+  color: #fff;  /* White text color */
+  box-shadow: 0 4px 10px rgba(26, 9, 9, 0.3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #7c56b0;  
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.forgot-password {
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-top: 15px;
+}
+
+.forgot-password:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .login-box {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input, button {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
